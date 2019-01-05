@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<div>
+<center>
+<header>Disneyland</header>	
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+<select autofocus method='POST' onchange="window.location=this.value;">
+  <option>-请选择-</option>
+  <option value="/introduction">乐园介绍</option>
+  <option value="/profile">人物介绍</option>
+  <option value="/games">基础设施介绍</option>
+  <option value="/movie">电影动画介绍</option>
+  <option value="/hotel">度假区介绍</option>
+  <option value="/tickets">乐园门票</option>
+  <option value="/board">留言板</option>
+</select>
+</center>
+</div>
+{% endblock %}

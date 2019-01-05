@@ -1,0 +1,7 @@
+ImmutableMultiDict([('character', '米奇')])|127.0.0.1|Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0
+ImmutableMultiDict([('character', '米奇')])|127.0.0.1|Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0
+ImmutableMultiDict([('themessage', '棒')])|127.0.0.1|Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0
+ImmutableMultiDict([('themessage', '棒')])|127.0.0.1|Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0
+ImmutableMultiDict([('themessage', '非常好')])|127.0.0.1|Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0
+ImmutableMultiDict([('themessage', 'hao')])|127.0.0.1|Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0
+ImmutableMultiDict([('themessage', 'good')])|127.0.0.1|Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0

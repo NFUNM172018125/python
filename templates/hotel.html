@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<h2>{{ the_title }}</h2>
+
+<form method='POST' action='/beaty'>
+<table>
+<p>请输入酒店名称:</p>
+<tr><td></td><td><input name='phrase' type='TEXT' width='30'></td></tr>
+</table>
+<p><input value='搜索' type='SUBMIT'></p>
+</form>
+
+
+<h2>{{ the_title2 }}</h2>
+<table>
+    <tr>
+        {% for row_title in the_row_titles %}
+            <th>{{row_title}}</th>
+        {% endfor %}
+    </tr>
+    {% for log_row in the_data %}
+        <tr>
+            {% for item in log_row %}
+                <td>{{item}}</td>
+            {% endfor %}
+        </tr>
+    {% endfor %}
+</table>
+
+{% endblock %}

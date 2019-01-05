@@ -1,0 +1,37 @@
+
+{% extends 'base.html' %}
+
+{% block body %}
+<center>
+
+<h2>{{ the_title }}</h2>
+
+
+<form method='POST' action='/game'>
+<table>
+<p>请选择一个游戏进行搜索:</p>
+<tr><td><input name='phrase' type='TEXT' width='30'></td></tr>
+</table>
+<p>输入完毕，请点击下方按钮:</p>
+<p><input value='GO！' type='SUBMIT'></p>
+</form>
+</center>
+
+<center>
+<h2>{{ the_title2 }}</h2>
+<table>
+    <tr>
+        {% for row_title in the_row_titles %}
+            <th>{{row_title}}</th>
+        {% endfor %}
+    </tr>
+    {% for log_row in the_data %}
+        <tr>
+            {% for item in log_row %}
+                <td>{{item}}</td>
+            {% endfor %}
+        </tr>
+    {% endfor %}
+</table>
+</center>
+{% endblock %}

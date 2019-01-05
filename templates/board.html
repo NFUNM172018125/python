@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<h2>{{ the_title }}</h2>
+<form method='POST' action='/thanks'>
+<input name="themessage" placeholder="请填写你的留言" type='TEXT' width='50'>
+<input value='提交' type='SUBMIT'>
+</form>
+
+{% endblock %}

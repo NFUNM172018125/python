@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<center>
+<header></header>	
+<h2>{{ the_title }}</h2>
+
+<form method='POST' action='/classic'>
+<table>
+<p>请输入影名查询:</p>
+<tr><td>影名:</td><td><input name='movie' type='TEXT' width='30'></td></tr>
+</table>
+<p>输入完毕，请点击下方按钮:</p>
+<p><input value='搜索' type='SUBMIT'></p>
+</form>
+
+</center>
+
+<h2>{{ the_title2 }}</h2>
+<table>
+    <tr>
+        {% for row_title in the_row_title %}
+            <th>{{row_title}}</th>
+        {% endfor %}
+    </tr>
+    {% for log_row in the_data %}
+        <tr>
+            {% for item in log_row %}
+                <td>{{item}}</td>
+            {% endfor %}
+        </tr>
+    {% endfor %}
+</table>
+{% endblock %}

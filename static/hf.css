@@ -1,0 +1,118 @@
+body {
+  font-family:      Verdana, Geneva, Arial, sans-serif;
+  font-size:        medium;
+	background-size:      100% 100%;
+	background-attachment: fixed;
+	margin-top:       15%;
+	margin-bottom:    15%;
+	margin-left:      15%;
+	margin-right:     15%;
+}
+a {
+  text-decoration:  none; 
+  font-weight:      600; 
+}
+a:hover {
+  text-decoration:  underline;
+}
+a img {
+  border:           0;
+}
+h2 {
+  font-size:        150%;
+}
+ul{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+li{
+display:inline;
+color: black;
+}
+#box{   width: 100%;
+		height: 50px;
+        position: fixed;
+        font-family: 'Microsoft YaHei';
+        font-size: 18px;
+		background-color: #7D9EC0;
+		top: 0;
+		left: 0;
+		display: inline-flex;}
+		box ul {
+			margin-top: 5px;
+			padding: 5px;
+		}
+		
+
+table {
+  margin-left:      20px;
+  margin-right:     20px;
+  caption-side:     bottom;
+  border-collapse:  collapse;
+}
+td, th {
+  padding:          5px;
+  text-align:       left;
+}
+select {
+	width: 120px;
+	height: 100%;
+	border: solid 1px rosybrown;
+	padding-right: 14px;
+	position: top;
+}
+
+header {
+	top: 20px;
+	font-size: 400%;
+    color:    black;
+    font-family: FZShuTi;}
+
+.copyright {
+  font-size:        75%;
+  font-style:       italic;
+}
+.slogan {
+  font-size:        75%;
+  font-style:       italic;
+}
+.confirmentry {
+  font-weight:      600; 
+}
+
+/*** Tables ***/
+
+table {
+font-size:          1em;
+background-color:   #fafcff;
+border:             1px solid #909090;
+color:              #2a2a2a;
+padding:            5px 5px 2px;
+border-collapse:    collapse;
+}
+
+td, th {
+border:             thin dotted gray;
+}
+
+/*** Inputs ***/
+input[type=text] {
+  font-size:        18px;
+  width:            18em;
+  position: initial;
+}
+input[type=submit] {
+        width: 100px;
+        height: 35px;
+        background: black;
+        color: white;
+        text-align: center;
+        line-height: 32px;
+        cursor: pointer;
+		border-radius:5px;
+		position: relative;
+}
+select {
+  font-size:        125%;
+}

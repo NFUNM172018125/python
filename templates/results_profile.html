@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block body %}
+
+<h2>{{ the_title }}</h2>
+
+<p>你所输入的人物"{{ the_name }}"信息如下:</p>
+
+<table>
+	<tr><th>角色</th><th>角色简介</th></tr>
+	<tr>
+		<td>{{the_name}}</td>
+		{% for item3 in the_results %}	
+		    <td>{{ item3 }}</td>
+		{% endfor %}	
+	</tr>
+</table>
+
+{% endblock %}

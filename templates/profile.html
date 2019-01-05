@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<div id="box">
+<ul>
+  <li><a href="/profile">人物介绍</a></li>
+  <li><a href="/entry">基础设施介绍</a></li>
+  <li><a href="#contact">电影动画介绍</a></li>
+  <li><a href="#about">分布情况</a></li>
+</ul>
+</div>
+
+<center>
+<form method='POST' action='/profile_results'>
+<input name="character" placeholder="请输入完整名称 例:米奇" type='TEXT' width='30'>
+<input value='搜索' type='SUBMIT'>
+</form>
+</br>
+</br>
+<h2>{{ the_title }}</h2>
+<table>
+	{% for log_row2 in the_results %}
+		<tr>
+			{% for item2 in log_row2 %}
+				<td>{{ item2 }}</td>
+			{% endfor %}
+		</tr>
+	{% endfor %}
+</table>
+</center>
+
+{% endblock %}
